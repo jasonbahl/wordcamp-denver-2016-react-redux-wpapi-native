@@ -11,6 +11,7 @@ import thunk from 'redux-thunk';
  * These reducers make up the subtrees of the Rexux store
  */
 import articles from './reducers/articles';
+import route from './reducers/route';
 import settings from './reducers/settings';
 import sites from './reducers/sites';
 
@@ -21,6 +22,7 @@ import sites from './reducers/sites';
  */
 const rootReducer = combineReducers({
 	articles,
+	route,
 	settings,
 	sites,
 });
