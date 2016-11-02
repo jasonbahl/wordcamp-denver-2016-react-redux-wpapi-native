@@ -1,0 +1,3 @@
+rootProject.name = 'wordcampNative2016'
+
+include ':app'
