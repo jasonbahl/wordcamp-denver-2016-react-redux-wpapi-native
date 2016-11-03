@@ -1,9 +1,11 @@
 /**
  * External Dependencies
  */
-import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import { Platform } from 'react-native';
+import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
 import createLogger from 'redux-logger'
 import thunk from 'redux-thunk';
+
 
 /**
  * State reducers
@@ -38,8 +40,7 @@ const loggerMiddleware = createLogger();
  */
 export default function configureStore( initialState = {} ) {
 
-    return createStore( rootReducer, initialState, compose(
-        applyMiddleware( thunk, loggerMiddleware )
-    ));
-
+	return createStore( rootReducer, initialState, compose(
+		applyMiddleware( thunk, loggerMiddleware )
+	));
 }
