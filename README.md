@@ -4,7 +4,7 @@ This was built to show how easy it is to learn React and Redux for the web, and 
 
 The web project this compliments is here: https://github.com/jasonbahl/wordcamp-denver-2016-react-redux-wpapi
 
-# Run the iOS app (sorry, there is no build out an Android version)
+# Run the iOS app (sorry, there currently is no Android version in this demo)
 
 To run the app, make sure you have xcode installed. Then, in the command line, navigate to the directory where you cloned this repo and run `react-native run-ios`
 
